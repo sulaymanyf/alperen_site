@@ -1,0 +1,21 @@
+.index_content{
+    height: 72vh;
+}
+
+.header{
+    height: 100px;
+    background-color: azure;
+}
+.footer{
+    height: 100px;
+    background-color: aqua;
+}
+
+.search_div{
+    margin-top: 40px;
+}
+.navBar{
+    background-color: coral;
+    margin-top: 20px;
+    height: 48px;
+}
