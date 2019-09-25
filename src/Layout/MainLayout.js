@@ -6,6 +6,8 @@ import Article from '../Article'
 import Konular from '../Konular'
 import MoreLike from "../MoreLike";
 import CountDown from "../CountDown";
+import Social from "../Social";
+import Profile from "../Profile";
 
 const {Header, Footer, Content} = Layout;
 const {Search} = Input;
@@ -51,6 +53,7 @@ class MainLayout extends React.Component {
 
                         <Row>
                             <Col span={5} className={"konular"}>
+                                <Profile />
                                 <Konular/>
                                 <CountDown date="Sept 26, 2019 20:00:00" />
                             </Col>
@@ -65,7 +68,18 @@ class MainLayout extends React.Component {
                             </Col>
                         </Row>
                     </Content>
-                    <Footer className={"footer"}>Footer</Footer>
+                    <Footer className={"footer"}>
+                        <Row>
+                            <Col span={8} offset={16}>
+                                <Social/>
+                            </Col>
+                        </Row>
+                        <Row>
+                            <Col span={12} offset={6}>
+                                <span style={{fontSize:14}}>©2019 Alperen Danışmanlık İletişim  Hakkı Saklıdır. &nbsp;&nbsp; design by <a style={{color:"white"}}>抉择的权利</a></span>
+                            </Col>
+                        </Row>
+                    </Footer>
                 </Layout>
             </Fragment>
         )
