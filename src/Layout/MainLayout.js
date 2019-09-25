@@ -1,9 +1,20 @@
 import React, {Fragment} from 'react'
-import {Layout, Row, Col, Input} from 'antd';
+import {Layout, Row, Col, Input, Typography, Pagination} from 'antd';
 import './index.css'
 import NavBar from "../NavBar";
+import Article from '../Article'
+import Konular from '../Konular'
+import MoreLike from "../MoreLike";
+import CountDown from "../CountDown";
+
 const {Header, Footer, Content} = Layout;
 const {Search} = Input;
+const {Title} = Typography;
+
+
+function showTotal(total) {
+    return `Total ${total} items`;
+}
 
 class MainLayout extends React.Component {
     render() {
@@ -33,19 +44,25 @@ class MainLayout extends React.Component {
                     </Header>
                     <Content className={"index_content"}>
                         <Row>
-                            <div >
-                                <Col span={22} offset={1}>
-                                    <div className={"navBar"}>
-                                      <NavBar/>
-                                    </div>
-                                </Col>
+                            <div className={"navBar"}>
+                                <NavBar/>
                             </div>
                         </Row>
 
                         <Row>
-                            <Col span={8}>col-8</Col>
-                            <Col span={8}>col-8</Col>
-                            <Col span={8}>col-8</Col>
+                            <Col span={5} className={"konular"}>
+                                <Konular/>
+                                <CountDown date="Sept 26, 2019 20:00:00" />
+                            </Col>
+                            <Col span={14}>
+                                <Article/>
+                                <div>
+                                    <Pagination size="small" total={50}   style={{marginTop: 24}}/>
+                                </div>
+                            </Col>
+                            <Col span={5}>
+                                <MoreLike/>
+                            </Col>
                         </Row>
                     </Content>
                     <Footer className={"footer"}>Footer</Footer>

@@ -1,0 +1,35 @@
+/*.index_content{*/
+/*    height: 72vh;*/
+/*}*/
+
+.header {
+    height: 100px;
+    background-color: #c79d32;
+}
+
+.footer {
+    margin-top: 40px;
+    height: 100px;
+    background-color: rgb(0, 0, 0);
+}
+
+.search_div {
+    margin-top: 40px;
+}
+
+.navBar {
+    margin-top: 20px;
+    height: 48px;
+    width: 94%;
+    margin-left: 48px;
+}
+
+.konular {
+    padding: 20px 50px;
+}
+.enlike{
+    background-color: white;
+    margin-top: 20px;
+    width: 37vh;
+    margin-left: 9px;
+}
