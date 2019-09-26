@@ -55,7 +55,7 @@ class MainLayout extends React.Component {
                             <Col span={5} className={"konular"}>
                                 <Profile />
                                 <Konular/>
-                                <CountDown date="Sept 26, 2019 20:00:00" />
+                                <CountDown  />
                             </Col>
                             <Col span={14}>
                                 <Article/>
